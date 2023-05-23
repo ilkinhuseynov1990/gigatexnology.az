@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoomingSoon</title>
+    <style>
+
+        body{
+            background-color: #0e0e0e;
+        }
+        @keyframes MyRotateAnimation{
+            from {
+                background-color: #0025c3;
+                transform: rotate(0deg);
+            }
+
+             
+            to {
+                background-color: #b4059a; 
+                transform: rotate(360deg);
+            }
+        }
+
+        .center{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+        }
+
+        .center .container{
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            border: 1px solid #010101 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 1px 1px 50px silver;
+            animation-name: MyRotateAnimation;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        .center .container .coming{
+            color: #fbfbfb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="container">
+            <div class="coming">
+                <h1>
+                    Coming Soon
+                </h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
